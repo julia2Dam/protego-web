@@ -1,0 +1,785 @@
+/* =========================
+   RESET Y ESTILOS BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+}
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.menu a {
+    margin-left: 18px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    padding: 80px 0 60px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+.btn {
+    padding: 14px 30px;
+    border-radius: 30px;
+    background-color: #ee8ad0;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* =========================
+   BLOQUES / TARJETAS
+========================= */
+.blocks {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.block {
+    padding: 30px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.block:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.block h2 {
+    margin-bottom: 10px;
+}
+
+.block p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.block-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.block a {
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer;
+}
+
+/* Botón dentro de la caja del Panel del Tutor */
+.tutor-panel {
+    position: relative; /* para posicionar el botón sin afectar layout */
+    padding: 20px; /* mantiene tu padding actual */
+}
+
+.tutor-panel .btn-login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #2A4D69; /* color Protego */
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.tutor-panel .btn-login:hover {
+    background-color: #82bff8;
+}
+
+/* =========================
+   VISUAL / LAYOUT FLEX
+========================= */
+.visual-main {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+}
+
+/* =========================
+   HERO 2 / PARÁGRAFOS CENTRADOS
+========================= */
+.hero2 p {
+    font-size: 18px;
+    text-align: center;
+    color: #555555;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+    background: #fafafa;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    padding: 16px;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(75, 164, 247);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: #333;
+}
+
+.card {
+    text-align: left;
+}
+
+.card-contacto {
+    text-align: center;
+}
+
+/* =========================
+   APP / IMÁGENES Y BLOQUES
+========================= */
+.app-block {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.app-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.app-img {
+    width: 40%;
+    height: 260px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.app-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* =========================
+   NOTICIAS
+========================= */
+.noticias {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: left;
+    max-width: 900px;
+}
+
+.noticias h2,
+.noticias p {
+    text-align: left;
+}
+
+.noticia {
+    background-color: #fdfdfd;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.noticia h2 {
+    font-size: 22px;
+    margin: 0;
+    color: #5a9c54;
+}
+
+.noticia p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.noticia .read-more {
+    padding: 10px 20px;
+    background-color: #1cb0f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.noticia .read-more:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    filter: brightness(1.1);
+}
+
+/* =========================
+   CAJAS MENSAJES PANEL DE CONTROL
+========================= */
+.messages-box {
+    margin-top: 10px;
+    border: 1px solid #cfd3d8;
+    background: #f9fafb;
+    padding: 10px;
+}
+
+.messages-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+/* CONTENEDOR CON SCROLL */
+.messages-list {
+    max-height: 180px;     /* solo se ven unos pocos */
+    overflow-y: auto;      /* barra de desplazamiento */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* MENSAJE INDIVIDUAL */
+.message-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background: #e5e7eb;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+/* =========================
+   CONFIGURACION PANEL DE CONTROL
+========================= */
+
+.config-panel {
+    margin-top: 10px;
+    background: #f1f1f1;
+    border: 1px solid #bfc5cc;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.config-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6px 0;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.config-row:last-child {
+    border-bottom: none;
+}
+
+.config-label {
+    color: #333;
+}
+
+.config-value {
+    color: #555;
+    text-align: right;
+}
+
+/* =========================
+   QUÉ HACEMOS
+========================= */
+.visual-main section.quehacemos {
+    padding: 20px 15px;    /* reduce padding */
+    margin-bottom: 20px;   /* menos separación entre bloques */
+    border-radius: 12px;
+}
+
+.visual-main section.quehacemos h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;      /* menos espacio arriba */
+    margin-bottom: 8px;    /* menos espacio debajo del título */
+    padding-top: 0;
+}
+
+.visual-main section.quehacemos p {
+    text-align: justify;
+    line-height: 1.5;      /* ajusta línea para bloques de texto más compactos */
+    margin-bottom: 10px;   /* reduce separación entre párrafos */
+}
+/* =========================
+   COMUNIDAD
+========================= */
+
+
+.visual-main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2A4D69;
+}
+
+/* Secciones */
+section {
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+.study-groups h2::before {
+    content: "📚 ";
+    margin-right: 8px; /* espacio entre icono y texto */
+}
+
+.forums h2::before {
+    content: "💬 ";
+    margin-right: 8px;
+}
+
+.events h2::before {
+    content: "📅 ";
+    margin-right: 8px;
+}
+
+/* ===================== */
+/* Estilo general de H2 dentro de secciones */
+
+section {
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+.study-groups h2,
+.forums h2,
+.events h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px; /* separación con contenido debajo */
+    padding-top: 10px;   /* más aire arriba del borde */
+}
+
+/* Opcional: todos los H2 dentro de cualquier sección */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* ========== Grupos de estudio ========== */
+.study-groups {
+    background-color: #D9EDF7; /* azul claro */
+}
+
+.group-cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.group-card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.group-card:hover {
+    transform: translateY(-5px);
+}
+
+.group-card h3 {
+    color: #1B2838;
+    margin-bottom: 8px;
+}
+
+/* ========== Foros ========== */
+.forums {
+    background-color: #F7F7F7; /* gris muy claro */
+}
+
+.forum-list {
+    list-style: none;
+    padding: 0;
+}
+
+.forum-list li {
+    background-color: #FFFFFF;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    color: #2B2B2B;
+    transition: background-color 0.2s;
+}
+
+.forum-list li:hover {
+    background-color: #E1F5FE; /* divertido al pasar el mouse */
+}
+
+/* ========== Eventos ========== */
+.events {
+    background-color: #FFF3E0; /* naranja claro */
+}
+
+.event-calendar {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.event-card h3 {
+    color: #BF360C; /* naranja oscuro */
+    margin-bottom: 8px;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ===================== */
+/* Responsive */
+@media (max-width: 768px) {
+    .group-cards, .event-calendar {
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background-color:#333;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   PANEL DE CONTROL
+========================= */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px auto;
+}
+
+.dashboard-stats {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.dashboard-bottom {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dashboard-card {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.btn-small {
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    background: #1cb0f6;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.btn-small:hover {
+    background: #0a84c1;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 5px;          /* Menos redondeado */
+    background-color: #888888;    /* Gris serio */
+    color: #fff;                  /* Texto blanco */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn2:hover {
+    background-color: #555555;    /* Gris más oscuro al pasar el ratón */
+}
+
+/* =========================
+   RESPONSIVE / MÓVIL
+========================= */
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    /* BLOQUES */
+    .blocks {
+        gap: 20px;
+    }
+
+    .block {
+        padding: 20px;
+    }
+
+    /* APP */
+    .app-block {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .app-block.reverse {
+        flex-direction: column;
+    }
+
+    .app-img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* NOTICIAS */
+    .noticias {
+        gap: 20px;
+    }
+
+    .noticia h2 {
+        font-size: 20px;
+    }
+
+    .noticia p {
+        font-size: 14px;
+    }
+
+    .noticia .read-more {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    /* CONTACTO */
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        align-self: center;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Protego | Nuestra app</title>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+
+<script>
+function openLightbox(el) {
+const src = el.querySelector('img').src;
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+lightboxImg.src = src;
+lightbox.style.display = 'flex';
+}
+
+
+function closeLightbox() {
+document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../images/Logo.png" alt="Logo Protego">
+                <span>PROTEGO</span>
+            </div>
+            <nav class="menu">
+                <a href="../index2.html">Inicio</a>
+                <a href="que_hacemos.html">Qué hacemos</a>
+                <a href="nuestra_app.html">APP</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+      <!-- main -->
+
+<main class="container visual-main">
+
+
+<h1>La app Protego</h1>
+
+
+<article class="app-block">
+    <div class="app-img" onclick="openLightbox(this)">
+        <img src="../images/app.png" alt="Pantalla App">
+    </div>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Imagen Ampliada">
+    </div>
+    <div class="app-text">
+        <h2>Registro sencillo</h2>
+        <p>Accede de forma rápida y segura.</p>
+    </div>
+</article>
+
+
+<article class="app-block reverse">
+<div class="app-text">
+<h2>Recursos personalizados</h2>
+<p>Contenido adaptado a tus necesidades.</p>
+</div>
+    <div class="app-img" onclick="openLightbox(this)">
+        <img src="../images/app.png" alt="Pantalla App">
+    </div>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Imagen Ampliada">
+    </div>
+</article>
+
+<article class="app-block">
+    <div class="app-img" onclick="openLightbox(this)">
+        <img src="../images/app.png" alt="Pantalla App">
+    </div>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Imagen Ampliada">
+    </div>
+<div class="app-text">
+<h2>Registro sencillo</h2>
+<p>Accede de forma rápida y segura.</p>
+</div>
+</article>
+
+<article class="app-block reverse">
+<div class="app-text">
+<h2>Recursos personalizados</h2>
+<p>Contenido adaptado a tus necesidades.</p>
+</div>
+    <div class="app-img" onclick="openLightbox(this)">
+        <img src="../images/app.png" alt="Pantalla App">
+    </div>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Imagen Ampliada">
+    </div>
+</article>
+
+</main>
+
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2026 Protego. Todos los derechos reservados.</p>
+
+        <ul class="socials">
+            <li><a href="aviso_legal.html">Aviso Legal</a></li>
+            <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+
+            <!-- Instagram con icono SVG -->
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512" fill="#E1306C">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-93.6S373.3 6.3 337.6 4.6c-35.7-1.7-142.9-1.7-178.6 0-35.7 1.7-67.3 9.9-93.6 36.2S6.3 138.7 4.6 174.4c-1.7 35.7-1.7 142.9 0 178.6 1.7 35.7 9.9 67.3 36.2 93.6s57.9 34.5 93.6 36.2c35.7 1.7 142.9 1.7 178.6 0 35.7-1.7 67.3-9.9 93.6-36.2s34.5-57.9 36.2-93.6c1.7-35.7 1.7-142.9 0-178.6zM398.8 388c-7.8 19.6-23 34.8-42.6 42.6-29.5 11.7-99.5 9-132.2 9s-102.7 2.6-132.2-9c-19.6-7.8-34.8-23-42.6-42.6-11.7-29.5-9-99.5-9-132.2s-2.6-102.7 9-132.2c7.8-19.6 23-34.8 42.6-42.6 29.5-11.7 99.5-9 132.2-9s102.7-2.6 132.2 9c19.6 7.8 34.8 23 42.6 42.6 11.7 29.5 9 99.5 9 132.2s2.7 102.7-9 132.2z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
