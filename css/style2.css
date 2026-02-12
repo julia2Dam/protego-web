@@ -1,7 +1,5 @@
-/* =========================
-   RESET Y ESTILOS BASE
-========================= */
-* {
+/*ESTILOS BASE*/
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,18 +10,14 @@ body {
     background-color: #fdfdfd;
 }
 
-/* =========================
-   CONTENEDOR GENERAL
-========================= */
+/*CONTENEDOR GENERAL*/
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER*/
 .header {
     padding: 20px 0;
 }
@@ -54,9 +48,7 @@ body {
     font-weight: 500;
 }
 
-/* =========================
-   HERO
-========================= */
+/*HERO*/
 .hero {
     padding: 80px 0 60px;
 }
@@ -85,9 +77,7 @@ body {
     display: inline-block;
 }
 
-/* =========================
-   BLOQUES / TARJETAS
-========================= */
+/*BLOQUES / TARJETAS*/
 .blocks {
     margin: 60px auto;
     display: flex;
@@ -153,9 +143,7 @@ body {
     background-color: #82bff8;
 }
 
-/* =========================
-   VISUAL / LAYOUT FLEX
-========================= */
+/*VISUAL / LAYOUT FLEX*/
 .visual-main {
     margin: 80px auto;
     display: flex;
@@ -168,18 +156,14 @@ body {
     gap: 30px;
 }
 
-/* =========================
-   HERO 2 / PARÁGRAFOS CENTRADOS
-========================= */
+/*HERO 2 / PARÁGRAFOS CENTRADOS*/
 .hero2 p {
     font-size: 18px;
     text-align: center;
     color: #555555;
 }
 
-/* =========================
-   CONTACTO
-========================= */
+/*CONTACTO*/
 .contact-section {
     display: flex;
     justify-content: center;
@@ -261,9 +245,7 @@ body {
     text-align: center;
 }
 
-/* =========================
-   APP / IMÁGENES Y BLOQUES
-========================= */
+/*APP / IMÁGENES Y BLOQUES*/
 .app-block {
     display: flex;
     gap: 40px;
@@ -291,9 +273,7 @@ body {
     max-height: 100%;
 }
 
-/* =========================
-   LIGHTBOX
-========================= */
+/*LIGHTBOX*/
 #lightbox {
     display: none;
     position: fixed;
@@ -312,9 +292,7 @@ body {
     border-radius: 10px;
 }
 
-/* =========================
-   NOTICIAS
-========================= */
+/*NOTICIAS*/
 .noticias {
     margin: 80px auto;
     display: flex;
@@ -370,9 +348,7 @@ body {
     filter: brightness(1.1);
 }
 
-/* =========================
-   CAJAS MENSAJES PANEL DE CONTROL
-========================= */
+/*CAJAS MENSAJES PANEL DE CONTROL*/
 .messages-box {
     margin-top: 10px;
     border: 1px solid #cfd3d8;
@@ -406,9 +382,7 @@ body {
     font-size: 14px;
 }
 
-/* =========================
-   CONFIGURACION PANEL DE CONTROL
-========================= */
+/*CONFIGURACION PANEL DE CONTROL*/
 
 .config-panel {
     margin-top: 10px;
@@ -438,30 +412,26 @@ body {
     text-align: right;
 }
 
-/* =========================
-   QUÉ HACEMOS
-========================= */
+/* QUÉ HACEMOS*/
 .visual-main section.quehacemos {
-    padding: 20px 15px;    /* reduce padding */
-    margin-bottom: 20px;   /* menos separación entre bloques */
+    padding: 20px 15px;  
+    margin-bottom: 20px;  
     border-radius: 12px;
 }
 
 .visual-main section.quehacemos h2 {
     font-size: 1.8rem;
-    margin-top: 10px;      /* menos espacio arriba */
-    margin-bottom: 8px;    /* menos espacio debajo del título */
+    margin-top: 10px;     
+    margin-bottom: 8px;   
     padding-top: 0;
 }
 
 .visual-main section.quehacemos p {
     text-align: justify;
-    line-height: 1.5;      /* ajusta línea para bloques de texto más compactos */
-    margin-bottom: 10px;   /* reduce separación entre párrafos */
+    line-height: 1.5;      
+    margin-bottom: 10px;   
 }
-/* =========================
-   COMUNIDAD
-========================= */
+/*COMUNIDAD*/
 
 
 .visual-main h1 {
@@ -492,7 +462,6 @@ section {
     margin-right: 8px;
 }
 
-/* ===================== */
 /* Estilo general de H2 dentro de secciones */
 
 section {
@@ -514,7 +483,7 @@ section h2 {
     margin-bottom: 15px;
 }
 
-/* ========== Grupos de estudio ========== */
+/* Grupos de estudio*/
 .study-groups {
     background-color: #D9EDF7; /* azul claro */
 }
@@ -543,7 +512,7 @@ section h2 {
     margin-bottom: 8px;
 }
 
-/* ========== Foros ========== */
+/*FORO*/
 .forums {
     background-color: #F7F7F7; /* gris muy claro */
 }
@@ -597,17 +566,14 @@ section h2 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* ===================== */
-/* Responsive */
+/* MOVIL*/
 @media (max-width: 768px) {
     .group-cards, .event-calendar {
         flex-direction: column;
     }
 }
 
-/* =========================
-   FOOTER
-========================= */
+/*FOOTER*/
 .footer {
     background-color:#333;
     text-align: center;
@@ -643,9 +609,7 @@ section h2 {
     text-decoration: underline;
 }
 
-/* =========================
-   PANEL DE CONTROL
-========================= */
+/*PANEL DE CONTROL*/
 .dashboard {
     display: flex;
     flex-direction: column;
@@ -704,9 +668,7 @@ section h2 {
     background-color: #555555;    /* Gris más oscuro al pasar el ratón */
 }
 
-/* =========================
-   RESPONSIVE / MÓVIL
-========================= */
+/*RESPONSIVE / MÓVIL*/
 @media (max-width: 768px) {
 
     /* HERO */
